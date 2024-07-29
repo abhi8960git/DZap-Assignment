@@ -8,5 +8,8 @@ module.exports = buildModule("TokenModule", (m) => {
   // ERC721 Contract Deployment
   const myNFT = m.contract("MyNFT");
 
-  return { myToken, myNFT };
+  // nftStaking contract Deployment 
+  const auction = m.contract("NFTStaking");
+
+  return { myToken, myNFT, auction };
 });
